@@ -8,11 +8,11 @@ from matplotlib.animation import FuncAnimation
 def fetch_data_from_db():
     try:
         connection = psycopg2.connect(
-            user="postgres",
-            password="luciano",
-            host="localhost",
-            port="5432",
-            database="monitor"
+            user="",
+            password="",
+            host="",
+            port="",
+            database=""
         )
         query = "SELECT timestamp, cpu_usage, memory_usage, disk_usage, disk_free FROM system_metrics WHERE timestamp >= NOW() - INTERVAL '2 HOURS' ORDER BY timestamp DESC"
         data = pd.read_sql(query, connection)
