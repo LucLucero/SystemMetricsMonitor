@@ -21,11 +21,11 @@ def get_disk_free():
 def save_metrics_to_db(cpu_usage, memory_usage, disk_usage, disk_free):
     try:
         connection = psycopg2.connect(
-            user="postgres",
-            password="luciano",
-            host="localhost",
-            port="5432",
-            database="monitor"
+            user="",
+            password="",
+            host="",
+            port="",
+            database=""
         )
         cursor = connection.cursor()
         
