@@ -18,3 +18,15 @@ Para executar este projeto, você precisará instalar as seguintes bibliotecas P
 - **Pandas**:
   ```bash
   pip install pandas
+
+### Configuração com o banco de dados
+Lembre-se de preencher corretamento os parâmetros para conexão com o banco
+
+- **Nesse projeto foi usado Postgres**:
+  ```bash
+  connection = psycopg2.connect(
+            user="seu user",
+            password="sua senha",
+            host="seu host",
+            port="sua porta",
+            database="seu database")
